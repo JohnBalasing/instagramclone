@@ -1,0 +1,20 @@
+.population_data{
+    font-family: "Ubuntu Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+.population_title{
+    font-size: 30px;
+    margin: 5px;
+    font-family: "Ubuntu Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    margin-top: 5px;
+}

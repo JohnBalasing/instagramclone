@@ -2,37 +2,69 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.transition__item{
+  align-self: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid tomato;
+  background-color: rgb(250,40,30);
+
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.transition__item:hover {
+  background-color: rgb(10,50,245);
+  transform: rotate(45deg);
+}
+
+.box{
+  align-self: center;
+  height: 500px;
+  width: 500px;
+  background-color: aqua;
+  border: 1px solid rgb(0,90,200);
+}
+
+.item1{
+  height: 50%;
+  width: 50%;
+  background-color: pink;
+}
+
+.box:hover .item1{
+  animation: example;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example{
+  0%{
+    transform: translateX(0%);
   }
-  to {
-    transform: rotate(360deg);
+
+  33%{
+    transform: translateY(100%);
+  }
+
+  66%{
+    transform: translateX(100%) translateY(100%);
+  }
+
+  100%{
+    transform: translateX(100%);
   }
 }
+
+
+
+

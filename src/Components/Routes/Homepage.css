@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+  }
+
+.homepage__container{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+}
+
+.homepage__navigation{
+    height: 10%;
+    width: 100%;
+    background-color: #000000;
+    margin: 0px;
+    font-family: "Ubuntu Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item1{
+    height: 30px;
+    width: 100px;
+    margin: 0 20px;
+    font-size: 15px;
+    color:aliceblue;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.nav__item2{
+    margin: 0 20px;
+    font-size: 35px;
+    color:aliceblue;
+    
+}
+
+.nav__item3{
+    margin: 20px;
+    font-size: 15px;
+    color:aliceblue;
+    height: 30px;
+    width:fit-content;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.homepage__input{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+}
+
+.select_location{
+    height: 40px;
+    width: 150px;
+    margin: 0 20px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 25px;
+    font-family: "Ubuntu Condensed", serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#lat_long{
+    text-align: center;
+}
+
+select, input{
+    border-radius: 5px;
+    background-color: #191818;
+    color:aliceblue;
+}
+
+option{
+    color:aliceblue;
+}
+
+.homepage__dashboard{   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 5px; /* Space between boxes */
+    padding: 10px;
+}
+
+.homepage__sidebar{
+    font-family: "Ubuntu Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #191818;
+    color: azure;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    height: 550px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.homepage__dashboard > .dashboard__item{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: azure;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    height: 200px;
+    border-radius: 15px;
+    margin: 5px;
+    font-family: "Ubuntu Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.homepage__main{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.sidebar__container{
+    height: 95%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.weather__temperature{
+    font-size: 50px;
+}
+
+.weather__feelslike, .weather__humidity{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.weather__clouds, .weather__wind, .weather__visibility{
+    font-family: "Ubuntu Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.visibility__icon{
+    margin-top: 15px;
+}
+
+
+.location_details > p{
+    color: yellow;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.homepage_dashboard_bg{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: #191818;
+}
+
+.dashboard__item_fullwidth{
+    grid-column: span 2; /* Spans across all 4 columns */
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: azure;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    height: 280px;
+    border-radius: 15px;
+    margin: 5px;
+    font-family: "Ubuntu Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
